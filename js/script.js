@@ -10,5 +10,13 @@ fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
        let liElem = document.createElement("li");
        let liElemButton = document.createElement("button");
        let liElemCounter = document.createElement("span");
+
+       // Assign an ID to the counter so that it can be reference later
+        liElemCounter.setAttribute('id', 'counter-'+ drink['idDrink'])
+
+         // Set all Inner HTML to starting value
+        liElemCounter.innerHTML = "    0"
+       liElemButton.innerHTML = EMPTY_HEART
+       liElem.innerHTML = drink['idDrink']
    })
 })
