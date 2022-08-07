@@ -15,7 +15,7 @@ fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
        let liElemCounter = document.createElement("span");
 
        // Assign IDs to the li elements so that it can be referenced later
-    //    liElem.setAttribute('id', drink['idDrink'])
+            //    liElem.setAttribute('id', drink['idDrink'])
        liElem.setAttribute('id', drink['strDrink'])
         // liElemCounter.setAttribute('id', 'counter-'+ drink['idDrink'])
         liElemCounter.setAttribute('id', 'counter-'+ drink['strDrink'])

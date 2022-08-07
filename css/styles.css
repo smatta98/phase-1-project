@@ -22,6 +22,30 @@ button {
     top: -500px;
  }
  
+#Margarita{
+    color: yellow;
+ }
+  
+ li[id ='Blue Margarita']{
+    color: blue;
+ }
+  
+ li[id ='Tommy/s Margarita']{
+    color: black
+ }
+  
+ li[id ='Whitecap Margarita']{
+    color:white
+ }
+  
+ li[id ='Strawberry Margarita']{
+    color:red
+ }
+  
+ li[id ='Smashed Watermelon Margarita']{
+    color:green
+ }
+ 
   
  ul {
     list-style: none;
