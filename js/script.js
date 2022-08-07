@@ -54,6 +54,10 @@ fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
        liElem.addEventListener('mouseover', () => {
         document.querySelector('#image').src = drink["strDrinkThumb"];
     })
-
+        //Create DoubleClick Event Listener
+        liElem.addEventListener('dblclick', () => {
+            document.querySelector('#marquee').innerHTML = drink["strInstructions"];
+        })
+ 
    })
 })
