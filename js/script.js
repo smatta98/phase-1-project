@@ -1,3 +1,6 @@
+const EMPTY_HEART = '♡'
+const FULL_HEART = '♥'
+
 fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
 .then(response => response.json())
 .then(data => {
@@ -58,6 +61,11 @@ fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
         liElem.addEventListener('dblclick', () => {
             document.querySelector('#marquee').innerHTML = drink["strInstructions"];
         })
- 
+        //Create Click Event Listener
+        liElemButton.addEventListener('click', () => {
+            liElemCounter.innerHTML = (parseInt(liElemCounter.innerHTML) + 1).toString()
+            liElemButton.innerHTML = FULL_HEART
+        })
+                
    })
 })
