@@ -1,0 +1,3 @@
+Title: Cocktail Recipes 
+
+In this project, I first use a fetch request to pull data from an authorized API and then iterate through the array, called drinks. Then, I create a UL element in which i then append my list elements  drink name, button, and counter. I then set each elements innerHTMl to the starting display values I would like it to have before I then append each element to my list. Following this step, I then create another UL element under each li to which I append the first three ingredients og every cocktail. Finally, I create my three unique event listeners and append them to the DOM. 
