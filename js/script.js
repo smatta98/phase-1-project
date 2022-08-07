@@ -11,7 +11,7 @@ fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
        let liElemButton = document.createElement("button");
        let liElemCounter = document.createElement("span");
 
-       // Assign IDs to the LI elements so that it can be referenced later
+       // Assign IDs to the li elements so that it can be referenced later
        liElem.setAttribute('id', drink['idDrink'])
         liElemCounter.setAttribute('id', 'counter-'+ drink['idDrink'])
 
@@ -25,8 +25,20 @@ fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
        liElem.appendChild(liElemButton)
        liElem.appendChild(liElemCounter)
 
-       //Append the list to the Master list
+       //Append the list elements to the bigger unordered list
        bigUL.appendChild(liElem)
 
+       //Create the Ingredient List elements
+       let divElem = document.createElement('div')
+       let smallUL = document.createElement('ul')
+       let ing1 = document.createElement('li')
+       let ing2 = document.createElement('li')
+       let ing3 = document.createElement('li')
+
+
+       //Set the Inner HTML of each ingredient equal to the first three ingredients of every drink
+       ing1.innerHTML = drink['strIngredient1']
+       ing2.innerHTML = drink['strIngredient2']
+       ing3.innerHTML = drink['strIngredient3']
    })
 })
