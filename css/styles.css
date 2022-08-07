@@ -21,7 +21,6 @@ button {
  li{
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:black;
     font-weight: 700;
   text-align: left;
     top: -500px;
@@ -36,19 +35,19 @@ button {
  }
   
  li[id ='Tommy/s Margarita']{
-    color: black
+    color: orange;
  }
   
  li[id ='Whitecap Margarita']{
-    color:white
+    color:white;
  }
   
  li[id ='Strawberry Margarita']{
-    color:red
+    color:red;
  }
   
  li[id ='Smashed Watermelon Margarita']{
-    color:green
+    color:green;
  }
  
   
@@ -66,5 +65,11 @@ button {
     width:20%;
     height: 20%;
  }
-  
+
+ #ingredients {
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+ }
+ 
  
