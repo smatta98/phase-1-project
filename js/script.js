@@ -38,9 +38,18 @@ fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
        //Create the Ingredient List elements
        let divElem = document.createElement('div')
        let smallUL = document.createElement('ul')
-       let ing1 = document.createElement('li')
-       let ing2 = document.createElement('li')
-       let ing3 = document.createElement('li')
+    //    let ing1 = document.createElement('li')
+    //    let ing2 = document.createElement('li')
+    //    let ing3 = document.createElement('li')
+
+    //Recreate the Ingredients so they are on one line
+        let ingredients = document.createElement('li')
+        //Set an ID for the new Ingredients
+        ingredients.setAttribute('id', 'ingredients')
+        //Set the InnerHTMl for the new ingredients list
+        ingredients.innerHTML = "Made with " + `${drink['strIngredient1'] + ", " + drink['strIngredient2'] + ", " + drink['strIngredient3'] + ", " +
+        drink['strIngredient4'] + ", " + drink['strIngredient5'] + ", " + drink['strIngredient6']}`
+ 
 
 
        //Set the Inner HTML of each ingredient equal to the first three ingredients of every drink
