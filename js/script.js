@@ -40,5 +40,16 @@ fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
        ing1.innerHTML = drink['strIngredient1']
        ing2.innerHTML = drink['strIngredient2']
        ing3.innerHTML = drink['strIngredient3']
+
+       //Append each ingredient to the list
+       smallUL.appendChild(ing1)
+       smallUL.appendChild(ing2)
+       smallUL.appendChild(ing3)
+
+       //Append the list to the Div and then append the div to the larger list
+       divElem.appendChild(smallUL)
+       bigUL.appendChild(divElem)
+
+       
    })
 })
