@@ -47,8 +47,8 @@ fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
         //Set an ID for the new Ingredients
         ingredients.setAttribute('id', 'ingredients')
         //Set the InnerHTMl for the new ingredients list
-        ingredients.innerHTML = "Made with " + `${drink['strIngredient1'] + ", " + drink['strIngredient2'] + ", " + drink['strIngredient3'] + ", " +
-        drink['strIngredient4'] + ", " + drink['strIngredient5'] + ", " + drink['strIngredient6']}`
+        ingredients.innerHTML = "Made with " + `${drink['strMeasure1'] + '' + drink['strIngredient1'] + ", " + drink['strMeasure2'] + '' + drink['strIngredient2'] + ", " + drink['strMeasure3'] + '' + drink['strIngredient3'] + ", " +
+        drink['strMeasure4'] + '' + drink['strIngredient4'] + ", " + drink['strMeasure5'] + '' + + drink['strIngredient5'] + ", " + drink['strMeasure6'] + '' + drink['strIngredient6']}`
         //Append the new ingredients to the list 
         smallUL.appendChild(ingredients)
 
