@@ -63,9 +63,14 @@ fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
         })
         //Create Click Event Listener
         liElemButton.addEventListener('click', () => {
+            if(liElemButton.innerHTML === EMPTY_HEART){
             liElemCounter.innerHTML = (parseInt(liElemCounter.innerHTML) + 1).toString()
             liElemButton.innerHTML = FULL_HEART
-        })
+            } else {
+            liElemCounter.innerHTML = (parseInt(liElemCounter.innerHTML) - 1).toString()
+            liElemButton.innerHTML = EMPTY_HEART
+            } 
+        })     
                 
    })
    document.body.appendChild(bigUL);
