@@ -50,6 +50,10 @@ fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
        divElem.appendChild(smallUL)
        bigUL.appendChild(divElem)
 
-       
+       //Create Mouseover Event Listener 
+       liElem.addEventListener('mouseover', () => {
+        document.querySelector('#image').src = drink["strDrinkThumb"];
+    })
+
    })
 })
